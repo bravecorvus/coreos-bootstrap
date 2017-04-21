@@ -7,6 +7,6 @@ chmod u+x coreos-install
 curl --remote-name https://raw.githubusercontent.com/gilgameshskytrooper/coreos-bootstrap/master/cloud-config.yml
 
 #./coreos-install -d /dev/sda -c cloud-config.yml -C stable
-./coreos-install -d /dev/sda -c ignition.json
+./coreos-install -d /dev/sda -c cloud-config.yml
 
-rm -rf cloud-config.yml  coreos-install
+rm -rf coreos-install
