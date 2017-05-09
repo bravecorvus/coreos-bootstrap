@@ -1,10 +1,9 @@
 passwd:
     users:
         - name: core
-            password_hash: $6C0Zabi5gN82
             ssh_autorhized_keys:
-            - AAAAB3NzaC1yc2EAAAADAQABAAABAQCrQtrkOMMhsFjru/cjmdddm3CiW69XGDff19u6hciIphBkYc4Zank1AKRgCRa/hkoF3KsagWTdPtmiYhJ3UEU8crbNSGJyEwiQ//m52xJutF5GZT8ygxrfCIlJfVhpJyczCnsNlskWAoDpUeoDJuikIF8jx9jmPiAGzUGZYVgAFk2VExjH15ErDofIT9LaVHhcC9ef9i6WmVyFQwEuWCmGaEt0ONmrmalLajtniQHWHeBoL3fLaqZ45qfy/MPJpm/q+Ki+CkBkrna2dGUSR25iMAJKYwb2ZmcYvsIwE5OokQ9bm5kTwh0cYM/glXYlPU4SBK1lwKK+uvuLlHDnTq75 andrewlee@wlan237-091.wireless.stolaf.edu
-
+              - AAAAB3NzaC1yc2EAAAADAQABAAABAQDClPvz4lvnT76gXLFr9xv6qiuESqFuoHFc6C2IS3wf6k4cgPO6JFkhhFUtFWSt5bHXHL6lK0sSfYtdPWg40ZWMYgVbrWHmridEAY/caNFk6Hn7mLuXuRjJoNCtT5DCy8cehHaSV/7cuHMLdJwGlTWMiKzHAMUYbuo1BJbnT/FIT6v692d1ppNp3fJEr4vEqPbC8RP6IYZboXXmTdjaKIQWaOkl4s5I6y34Bm/alf6YWeJGTzjM/r8oCuGGk7YQlUd7lLd1C/QnZJLY4SMWTtFuApeg1wnLgY+EJBAtXcw+s6BRyHZYu/lWYJmyfLatoMbubaBC8J72xPEuOe9bFnu/ andrew@Headnode
+              - AAAAB3NzaC1yc2EAAAADAQABAAABAQCrQtrkOMMhsFjru/cjmdddm3CiW69XGDff19u6hciIphBkYc4Zank1AKRgCRa/hkoF3KsagWTdPtmiYhJ3UEU8crbNSGJyEwiQ//m52xJutF5GZT8ygxrfCIlJfVhpJyczCnsNlskWAoDpUeoDJuikIF8jx9jmPiAGzUGZYVgAFk2VExjH15ErDofIT9LaVHhcC9ef9i6WmVyFQwEuWCmGaEt0ONmrmalLajtniQHWHeBoL3fLaqZ45qfy/MPJpm/q+Ki+CkBkrna2dGUSR25iMAJKYwb2ZmcYvsIwE5OokQ9bm5kTwh0cYM/glXYlPU4SBK1lwKK+uvuLlHDnTq75 andrewlee@wlan237-091.wireless.stolaf.edu
 networkd:
     units:
         - name: static.network
