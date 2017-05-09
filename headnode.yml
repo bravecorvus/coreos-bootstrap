@@ -1,7 +1,7 @@
 passwd:
     users:
         - name: core
-            password_hash: 123
+            password_hash: yDH9GIEDKzU/Y
             ssh_autorhized_keys:
             - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrQtrkOMMhsFjru/cjmdddm3CiW69XGDff19u6hciIphBkYc4Zank1AKRgCRa/hkoF3KsagWTdPtmiYhJ3UEU8crbNSGJyEwiQ//m52xJutF5GZT8ygxrfCIlJfVhpJyczCnsNlskWAoDpUeoDJuikIF8jx9jmPiAGzUGZYVgAFk2VExjH15ErDofIT9LaVHhcC9ef9i6WmVyFQwEuWCmGaEt0ONmrmalLajtniQHWHeBoL3fLaqZ45qfy/MPJpm/q+Ki+CkBkrna2dGUSR25iMAJKYwb2ZmcYvsIwE5OokQ9bm5kTwh0cYM/glXYlPU4SBK1lwKK+uvuLlHDnTq75 andrewlee@wlan237-091.wireless.stolaf.edu"
 networkd:
