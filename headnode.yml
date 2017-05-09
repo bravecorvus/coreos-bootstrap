@@ -1,28 +1,16 @@
-users:
-    - name: core
-      passwd: 123
-coreos:
-  etcd2:
-    name: etcdserver
-    initial-cluster: etcdserver=http://10.0.0.101:2380
-    initial-advertise-peer-urls: http://10.0.0.101:2380
-    advertise-client-urls: http://10.0.0.101:2379
-    # listen on both the official ports and the legacy ports
-    # legacy ports can be omitted if your application doesn't depend on them
-    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
-    listen-peer-urls: http://0.0.0.0:2380
-  units:
-    - name: etcd2.service
-      command: start
-    - name: 00-eth0.network
-      runtime: true
-      content: |
-        [Match]
-        Name=eth0
+passwd:
+    users:
+        - name: core
+            password_hash: 123
+            ssh_autorhized_keys:
+            - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrQtrkOMMhsFjru/cjmdddm3CiW69XGDff19u6hciIphBkYc4Zank1AKRgCRa/hkoF3KsagWTdPtmiYhJ3UEU8crbNSGJyEwiQ//m52xJutF5GZT8ygxrfCIlJfVhpJyczCnsNlskWAoDpUeoDJuikIF8jx9jmPiAGzUGZYVgAFk2VExjH15ErDofIT9LaVHhcC9ef9i6WmVyFQwEuWCmGaEt0ONmrmalLajtniQHWHeBoL3fLaqZ45qfy/MPJpm/q+Ki+CkBkrna2dGUSR25iMAJKYwb2ZmcYvsIwE5OokQ9bm5kTwh0cYM/glXYlPU4SBK1lwKK+uvuLlHDnTq75 andrewlee@wlan237-091.wireless.stolaf.edu"
+networkd:
+    units:
+        - name: static.network
+          contents: |
+              [Match]
+              Name=enp4s0f0
 
-        [Network]
-        DNS=1.2.3.4
-        Address=10.0.0.101/24
-        Gateway=10.0.0.1
-    ssh_autorhized_keys:
-        - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCrQtrkOMMhsFjru/cjmdddm3CiW69XGDff19u6hciIphBkYc4Zank1AKRgCRa/hkoF3KsagWTdPtmiYhJ3UEU8crbNSGJyEwiQ//m52xJutF5GZT8ygxrfCIlJfVhpJyczCnsNlskWAoDpUeoDJuikIF8jx9jmPiAGzUGZYVgAFk2VExjH15ErDofIT9LaVHhcC9ef9i6WmVyFQwEuWCmGaEt0ONmrmalLajtniQHWHeBoL3fLaqZ45qfy/MPJpm/q+Ki+CkBkrna2dGUSR25iMAJKYwb2ZmcYvsIwE5OokQ9bm5kTwh0cYM/glXYlPU4SBK1lwKK+uvuLlHDnTq75 andrewlee@wlan237-091.wireless.stolaf.edu"
+              [Network]
+              Address=192.168.15/24
+              Gateway=192.168.0.1
